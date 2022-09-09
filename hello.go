@@ -23,7 +23,13 @@ func split(prod int) (x, y, z int) {
 }
 
 func main() {
+    
+    // This assigns the outputs of swap into the variables a, b, and c.
     a, b, c := swap("hello", "world", "fedora")
+    
+    // This will output a, b, and c.
     fmt.Println(a, b, c)
+    
+    // This will split up 20 in various ways and return three values.
     fmt.Println(split(20))
 }
