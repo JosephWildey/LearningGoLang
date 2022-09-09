@@ -2,6 +2,7 @@ package main
 
 import (
     "fmt"
+    "math"
 )
 
 
@@ -20,10 +21,17 @@ func Sqrt(x float64) float64 {
     }
 
     // returns the estimated square root
-    return z
+    return math.Floor(z)
 
 }
 
 func main() {
-    fmt.Println(Sqrt(16))
+
+    var usrNum float64 
+
+    fmt.Println("Please enter a number")
+
+    fmt.Scanln(&usrNum)
+
+    fmt.Println(Sqrt(usrNum))
 }
