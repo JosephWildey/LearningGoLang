@@ -5,12 +5,16 @@ import (
 )
 
 
-// This reverses the order of input strings
+/* This reverses the order of input strings.
+   This will return a value for x, y, and z, which are all strings here.
+*/
 func swap(x, y, z string) (string, string, string) {
     return z, y, x
 }
 
-// This splits numbers and returns the product. It utilizes "naked" returns
+/*  This splits numbers and returns the product. It utilizes "naked" returns.
+    It will return a value for x, y, and z.
+*/
 func split(prod int) (x, y, z int) {
     x = prod * 4/9
     y = prod - x
