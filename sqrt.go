@@ -20,7 +20,7 @@ func Sqrt(x float64) float64 {
 
     }
 
-    // returns the estimated square root as a whole number
+    // returns the estimated square root as a whole number, despite the float data type
     return math.Floor(z)
 
 }
