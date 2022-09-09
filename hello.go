@@ -24,7 +24,9 @@ func split(prod int) (x, y, z int) {
 
 func main() {
     
-    // This assigns the outputs of swap into the variables a, b, and c.
+    /* This assigns the outputs of swap into the variables a, b, and c.
+       This sort of assignment is only possible within limited scopes.
+    */
     a, b, c := swap("hello", "world", "fedora")
     
     // This will output a, b, and c.
